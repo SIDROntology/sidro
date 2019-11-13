@@ -1,0 +1,328 @@
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0> .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative> <http://www.w3.org/2000/01/rdf-schema#comment> "An alternative interpretation." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#common
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#common> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#common> <http://www.w3.org/2000/01/rdf-schema#comment> "An accredited interpretation, that is the conventional one." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited> <http://www.w3.org/2000/01/rdf-schema#comment> "A interpretation that is not considered as reliable." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ReflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#subject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource> <http://www.w3.org/2000/01/rdf-schema#comment> "The physical source that contains the subject of the statement; expressed preferably through a URI or DOI." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "The basis of the subject of the statement; e.g. the starting point of the interpretation." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic> <http://www.w3.org/2000/01/rdf-schema#comment> "The topic of the subject of the statement." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#common> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The credit given to the subject of the statement." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork> <http://www.w3.org/2000/01/rdf-schema#comment> "Any physical artwork that can be observed. For instance a painting or a statue." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Any element of the artwork's content that is a living being." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> <http://www.w3.org/2000/01/rdf-schema#comment> "The content of the artwork." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate> <http://www.w3.org/2000/01/rdf-schema#comment> "Any explicit or inferred discussion between parties, around any object. Whether the debate is explicit or inferred, it has to be specified in the Description." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description> <http://www.w3.org/2000/01/rdf-schema#comment> "The description of the subject of the statement." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> <http://www.w3.org/2000/01/rdf-schema#comment> "Any single element that is present in the content of an artwork." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "Any group of elements contained in the content of an artwork." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation> <http://www.w3.org/2000/01/rdf-schema#comment> "Any interpretation around any object. For interpretation we intend the understanding and comment by someone on something.\nPreferably in the form:\n\"Title\" by Author" .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item> <http://www.w3.org/2000/01/rdf-schema#comment> "Any element of the artwork's content that is inanimated." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The connotative description of the subject of the statement." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A denotative description of the subject of the statement." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity from which the symbol derives its meaning, i.e. the provenance of the symbol's meaning (e.g. the biography of the artist; an historical event; a general concept, etc.)." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject> <http://www.w3.org/2000/01/rdf-schema#comment> "The concept which is referred to in the content." .
+# 
+# http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol> <http://www.w3.org/2000/01/rdf-schema#comment> "The thing that represents or stands for something else." .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being." .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

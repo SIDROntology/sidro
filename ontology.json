@@ -1,0 +1,468 @@
+[ {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any physical artwork that can be observed. For instance a painting or a statue."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any element of the artwork's content that is a living being."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The content of the artwork."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any explicit or inferred discussion between parties, around any object. Whether the debate is explicit or inferred, it has to be specified in the Description."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The description of the subject of the statement."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any single element that is present in the content of an artwork."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any group of elements contained in the content of an artwork."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any interpretation around any object. For interpretation we intend the understanding and comment by someone on something.\nPreferably in the form:\n\"Title\" by Author"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any element of the artwork's content that is inanimated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The connotative description of the subject of the statement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A denotative description of the subject of the statement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The entity from which the symbol derives its meaning, i.e. the provenance of the symbol's meaning (e.g. the biography of the artist; an historical event; a general concept, etc.)."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The concept which is referred to in the content."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The thing that represents or stands for something else."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An alternative interpretation."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#common",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An accredited interpretation, that is the conventional one."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A interpretation that is not considered as reliable."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The physical source that contains the subject of the statement; expressed preferably through a URI or DOI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The basis of the subject of the statement; e.g. the starting point of the interpretation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The topic of the subject of the statement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The credit given to the subject of the statement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#common"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A human being."
+  } ]
+} ]

@@ -1,0 +1,362 @@
+@prefix : <http://www.semanticweb.org/ontologies/2019/11/SIDRO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/2019/11/SIDRO> .
+
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO> rdf:type owl:Ontology ;
+                                                       owl:versionIRI <http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0> .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative
+:alternative rdf:type rdfs:Datatype ;
+             rdfs:comment "An alternative interpretation." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#common
+:common rdf:type rdfs:Datatype ;
+        rdfs:comment "An accredited interpretation, that is the conventional one." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited
+:discredited rdf:type rdfs:Datatype ;
+             rdfs:comment "A interpretation that is not considered as reliable." .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains
+:contains rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isContainedIn ;
+          rdf:type owl:TransitiveProperty .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement
+:containsElement rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :contains ;
+                 rdf:type owl:TransitiveProperty ;
+                 rdfs:domain :Content ,
+                             :Group ;
+                 rdfs:range :Element .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup
+:containsGroup rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :contains ;
+               rdf:type owl:TransitiveProperty ;
+               rdfs:domain :Content ;
+               rdfs:range :Group .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts
+:depicts rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isDepictedBy ;
+         rdf:type owl:TransitiveProperty ;
+         rdfs:domain :Artwork ;
+         rdfs:range :Content .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom
+:getsMeaningFrom rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain :Symbol ;
+                 rdfs:range :Origin .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription
+:hasDescription rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain :Artwork ,
+                            :Character ,
+                            :Content ,
+                            :Debate ,
+                            :Element ,
+                            :Group ,
+                            :Interpretation ,
+                            :Item ,
+                            :Origin ,
+                            :Subject ,
+                            :Symbol ;
+                rdfs:range :Description .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject
+:hasObject rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isObjectOf ;
+           rdf:type owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Debate ,
+                       :Interpretation ;
+           rdfs:range :Character ,
+                      :Content ,
+                      :Element ,
+                      :Group ,
+                      :Item ,
+                      :Subject ,
+                      :Symbol .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation
+:hasPrevailingInterpretation rdf:type owl:ObjectProperty ,
+                                      owl:FunctionalProperty ,
+                                      owl:AsymmetricProperty ,
+                                      owl:IrreflexiveProperty ;
+                             rdfs:domain :Debate ;
+                             rdfs:range :Interpretation .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation
+:hasSimilarInterpretation rdf:type owl:ObjectProperty ,
+                                   owl:SymmetricProperty ,
+                                   owl:ReflexiveProperty ;
+                          rdfs:domain :Interpretation ;
+                          rdfs:range :Interpretation ;
+                          owl:propertyDisjointWith :hasSustainer .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer
+:hasSustainer rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Interpretation ;
+              rdfs:range <http://xmlns.com/foaf/0.1/Person> .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves
+:involves rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isInvolvedIn ;
+          rdf:type owl:AsymmetricProperty ,
+                   owl:IrreflexiveProperty ;
+          rdfs:domain :Debate ;
+          rdfs:range :Interpretation .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn
+:isContainedIn rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent
+:isContainedInContent rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :isContainedIn ;
+                      rdf:type owl:TransitiveProperty ;
+                      rdfs:domain :Element ,
+                                  :Group ;
+                      rdfs:range :Content .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup
+:isContainedInGroup rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :isContainedIn ;
+                    rdf:type owl:TransitiveProperty ;
+                    rdfs:domain :Element ;
+                    rdfs:range :Group .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy
+:isDepictedBy rdf:type owl:ObjectProperty ,
+                       owl:TransitiveProperty ;
+              rdfs:domain :Content ;
+              rdfs:range :Artwork .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn
+:isInvolvedIn rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :Interpretation ;
+              rdfs:range :Debate .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf
+:isObjectOf rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Character ,
+                        :Content ,
+                        :Element ,
+                        :Group ,
+                        :Interpretation ,
+                        :Item ,
+                        :Symbol ;
+            rdfs:range :Debate ,
+                       :Interpretation .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy
+:isRepresentedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :represents ;
+                 rdf:type owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain :Symbol ;
+                 rdfs:range :Character ,
+                            :Content ,
+                            :Element ,
+                            :Group ,
+                            :Item .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents
+:represents rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Character ,
+                        :Content ,
+                        :Element ,
+                        :Group ,
+                        :Item ;
+            rdfs:range :Symbol .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+rdf:subject rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
+            rdfs:domain :Content ;
+            rdfs:range :Subject .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+rdf:type rdf:type owl:ObjectProperty ,
+                  owl:SymmetricProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Description ;
+         rdfs:range :MetaphoricDescription ,
+                    :ObjectiveDescription .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource
+:hasPhysicalSource rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Interpretation ;
+                   rdfs:range xsd:anyURI ,
+                              xsd:string ;
+                   rdfs:comment "The physical source that contains the subject of the statement; expressed preferably through a URI or DOI." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption
+:hasStartingAssumption rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Interpretation ;
+                       rdfs:range xsd:anyURI ,
+                                  xsd:string ;
+                       rdfs:comment "The basis of the subject of the statement; e.g. the starting point of the interpretation." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic
+:hasTopic rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Content ;
+          rdfs:range xsd:anyURI ,
+                     xsd:string ;
+          rdfs:comment "The topic of the subject of the statement." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs
+:isPerceivedAs rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Interpretation ;
+               rdfs:range :alternative ,
+                          :common ,
+                          :discredited ;
+               rdfs:comment "The credit given to the subject of the statement." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork
+:Artwork rdf:type owl:Class ;
+         rdfs:comment "Any physical artwork that can be observed. For instance a painting or a statue." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :Element ;
+           rdfs:comment "Any element of the artwork's content that is a living being." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content
+:Content rdf:type owl:Class ;
+         rdfs:comment "The content of the artwork." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate
+:Debate rdf:type owl:Class ;
+        rdfs:comment "Any explicit or inferred discussion between parties, around any object. Whether the debate is explicit or inferred, it has to be specified in the Description." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description
+:Description rdf:type owl:Class ;
+             rdfs:comment "The description of the subject of the statement." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element
+:Element rdf:type owl:Class ;
+         rdfs:subClassOf :Content ;
+         rdfs:comment "Any single element that is present in the content of an artwork." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group
+:Group rdf:type owl:Class ;
+       rdfs:subClassOf :Content ;
+       rdfs:comment "Any group of elements contained in the content of an artwork." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation
+:Interpretation rdf:type owl:Class ;
+                rdfs:comment """Any interpretation around any object. For interpretation we intend the understanding and comment by someone on something.
+Preferably in the form:
+\"Title\" by Author""" .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item
+:Item rdf:type owl:Class ;
+      rdfs:subClassOf :Element ;
+      rdfs:comment "Any element of the artwork's content that is inanimated." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription
+:MetaphoricDescription rdf:type owl:Class ;
+                       rdfs:subClassOf :Description ;
+                       rdfs:comment "The connotative description of the subject of the statement." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription
+:ObjectiveDescription rdf:type owl:Class ;
+                      rdfs:subClassOf :Description ;
+                      rdfs:comment "A denotative description of the subject of the statement." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin
+:Origin rdf:type owl:Class ;
+        rdfs:comment "The entity from which the symbol derives its meaning, i.e. the provenance of the symbol's meaning (e.g. the biography of the artist; an historical event; a general concept, etc.)." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject
+:Subject rdf:type owl:Class ;
+         rdfs:comment "The concept which is referred to in the content." .
+
+
+###  http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol
+:Symbol rdf:type owl:Class ;
+        rdfs:comment "The thing that represents or stands for something else." .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:comment "A human being." .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
