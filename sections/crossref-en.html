@@ -1,362 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>SIDRO - Symbolism Interpretative Debates in aRtworks Ontology</title>
-
-
-<!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/ontologies/2019/11/SIDRO","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/ontologies/2019/11/SIDRO","name":"SIDRO - Symbolism Interpretative Debates in aRtworks Ontology", "headline":"SIDRO aims at representing the debates arising around the possible interpretations of symbolism in artworks.", "datePublished":"11/2019", "version":"v1.0.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Rebecca Del Bene"},{"@type":"Person","name":"Leticia Hamvegam"},{"@type":"Person","name":"Arianna Pizzicori"}]}</script>
-
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
-function loadHash() {
-  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
-	var hash = location.hash;
-	if($(hash).offset()!=null){
-	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
-}
-	loadTOC();
-}
-function loadTOC(){
-	//process toc dynamically
-	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
-	  jQuery(".list").each(function(){
-		if(jQuery(this).is('h2')){
-			if(j>0){
-				t+='</ul>';
-				j=0;
-			}
-			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-			i++;
-		}
-		if(jQuery(this).is('h3')){
-			if(j==0){
-				t+='<ul>';
-			}
-			j++;
-			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
-		}
-	  });
-	  t+='</ul>';
-	  $("#toc").html(t); 
-}
- $.fn.ignore = function(sel){
-        return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
-
-<body>
-<div class="container">
-<div class="head">
-<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>SIDRO - Symbolism Interpretative Debates in aRtworks Ontology</h1>
-<h2>Release  11/2019</h2>
-
-
-<dl>
-<dt>This version:</dt>
-<dd><a href="http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0">http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0</a></dd>
-<dt>Revision:</dt>
-<dd>v1.0.0</dd>
-<dt>Authors:</dt>
-<dd>Rebecca Del Bene</dd><dd>Leticia Hamvegam</dd><dd>Arianna Pizzicori</dd>
-
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
-</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<dt>Cite as:</dt>
-<dd>Rebecca Del Bene, Leticia Hamvegam and Arianna Pizzicori. SIDRO - Symbolism Interpretative Debates in aRtwork Ontology. URL: http://www.semanticweb.org/ontologies/2019/11/SIDRO/1.0.0</dd>
-</dl>
-
-<hr/>
-</div>
-<div class="status">
-<div>
-<span>Ontology Specification Draft</span>
-</div>
-</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-SIDRO aims at representing the debates arising around the possible interpretations of symbolism in artworks.</span>
-</div>
-<div id="toc"></div> 
-
-<!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-SIDRO goes to integrate the description one could wish to provide of an artwork through the existing ontologies of the domain. It gives the possibility to describe the content and to shift towards the metaphoric level by talking of what the content represents, i.e. the symbolism. The different interpretations that arise from the content and the symbolic level can be described through the ontology, as well as the debates that emerge between them.</span>
-<div id="namespacedeclarations">
-<h3 id="ns" class="list">Namespace declarations</h3>
-<div id="ns" align="center">
-<table>
-<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
-<tbody>
-<tr><td><b>sidro</b></td><td>&lt;http://www.semanticweb.org/ontologies/2019/11/SIDRO&gt;</td></tr>
-<tr><td><b>11</b></td><td>&lt;http://www.semanticweb.org/ontologies/2019/11&gt;</td></tr>
-<tr><td><b>0-1</b></td><td>&lt;http://xmlns.com/foaf/0.1&gt;</td></tr>
-<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
-<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-  
-
-<!--OVERVIEW SECTION-->
-    <div id="overview"><h2 id="overv" class="list">SIDRO: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This ontology has the following classes and properties.</span>
-<h4>Classes</h4>
-<ul class="hlist">
-   <li>
-      <a href="#Artwork"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Artwork">
-         <span>artwork</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Character"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character">
-         <span>character</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Content"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content">
-         <span>content</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Debate"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate">
-         <span>debate</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Description"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description">
-         <span>description</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Element"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element">
-         <span>element</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Group"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group">
-         <span>group</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Interpretation"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation">
-         <span>interpretation</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Item"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item">
-         <span>item</span>
-      </a>
-   </li>
-   <li>
-      <a href="#MetaphoricDescription"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#MetaphoricDescription">
-         <span>metaphoric description</span>
-      </a>
-   </li>
-   <li>
-      <a href="#ObjectiveDescription"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription">
-         <span>objective description</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Origin"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin">
-         <span>origin</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
-         <span>person</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Subject"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject">
-         <span>subject</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Symbol"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol">
-         <span>symbol</span>
-      </a>
-   </li>
-</ul><h4>Object Properties</h4><ul class="hlist">
-   <li>
-      <a href="#contains"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains">
-         <span>contains</span>
-      </a>
-   </li>
-   <li>
-      <a href="#containsElement"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement">
-         <span>contains element</span>
-      </a>
-   </li>
-   <li>
-      <a href="#containsGroup"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup">
-         <span>contains group</span>
-      </a>
-   </li>
-   <li>
-      <a href="#depicts"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts">
-         <span>depicts</span>
-      </a>
-   </li>
-   <li>
-      <a href="#getsMeaningFrom"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom">
-         <span>gets meaning from</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasDescription"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription">
-         <span>has description</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasObject"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject">
-         <span>has object</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasPrevailingInterpretation"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation">
-         <span>has prevailing interpretation</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasSimilarInterpretation"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation">
-         <span>has similar interpretation</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasSustainer"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer">
-         <span>has sustainer</span>
-      </a>
-   </li>
-   <li>
-      <a href="#involves"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves">
-         <span>involves</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isContainedIn"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn">
-         <span>is contained in</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isContainedInContent"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent">
-         <span>is contained in content</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isContainedInGroup"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup">
-         <span>is contained in group</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isDepictedBy"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy">
-         <span>is depicted by</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isInvolvedIn"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn">
-         <span>is involved in</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isObjectOf"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf">
-         <span>is object of</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isRepresentedBy"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy">
-         <span>is represented by</span>
-      </a>
-   </li>
-   <li>
-      <a href="#represents"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents">
-         <span>represents</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
-         title="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
-         <span>subject</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.w3.org/1999/02/22-rdf-syntax-ns#type" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
-         <span>type</span>
-      </a>
-   </li>
-</ul><h4>Data Properties</h4><ul class="hlist">
-   <li>
-      <a href="#hasPhysicalSource"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource">
-         <span>has physical source</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasStartingAssumption"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption">
-         <span>has starting assumption</span>
-      </a>
-   </li>
-   <li>
-      <a href="#hasTopic"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic">
-         <span>has topic</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isPerceivedAs"
-         title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs">
-         <span>is perceived as</span>
-      </a>
-   </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
-</div>
-   
-
-<!--CROSSREF SECTION-->
-   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for SIDRO classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross reference for SIDRO classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by SIDRO.
 <div id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
@@ -536,9 +178,7 @@ This section provides details for each class and property defined by SIDRO.
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#contains"
-               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains">contains</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#containsElement"
+            <a href="#containsElement"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement">contains element</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#containsGroup"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup">contains group</a>
@@ -546,7 +186,9 @@ This section provides details for each class and property defined by SIDRO.
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription">has description</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTopic"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic">has topic</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#isDepictedBy"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#isContainedIn"
+               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn">is contained in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isDepictedBy"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy">is depicted by</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isObjectOf"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf">is object of</a>
@@ -558,7 +200,9 @@ This section provides details for each class and property defined by SIDRO.
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#depicts"
+            <a href="#contains"
+               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains">contains</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#depicts"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts">depicts</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasObject"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject">has object</a>
@@ -662,10 +306,10 @@ This section provides details for each class and property defined by SIDRO.
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasDescription"
+            <a href="#contains"
+               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains">contains</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasDescription"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription">has description</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isContainedIn"
-               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn">is contained in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isContainedInContent"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent">is contained in content</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isContainedInGroup"
@@ -678,12 +322,12 @@ This section provides details for each class and property defined by SIDRO.
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#contains"
-               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains">contains</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#containsElement"
+            <a href="#containsElement"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement">contains element</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasObject"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject">has object</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isContainedIn"
+               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn">is contained in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isRepresentedBy"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy">is represented by</a>
             <sup class="type-op" title="object property">op</sup>
@@ -715,8 +359,6 @@ This section provides details for each class and property defined by SIDRO.
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement">contains element</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasDescription"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription">has description</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isContainedIn"
-               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn">is contained in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isContainedInContent"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent">is contained in content</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isObjectOf"
@@ -727,9 +369,7 @@ This section provides details for each class and property defined by SIDRO.
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#contains"
-               title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains">contains</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#containsGroup"
+            <a href="#containsGroup"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup">contains group</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasObject"
                title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject">has object</a>
@@ -1131,8 +771,8 @@ Preferably in the form:
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Content"
-                  title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content">content</a>
+               <a href="#Element"
+                  title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element">element</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dd>
@@ -1142,13 +782,8 @@ Preferably in the form:
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Element"
-                  title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element">element</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#Group"
-                  title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group">group</a>
+               <a href="#Content"
+                  title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content">content</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -1560,16 +1195,16 @@ Preferably in the form:
             </dd>
             <dt>has domain</dt>
             <dd>
+               <a href="#Content"
+                  title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content">content</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
                <a href="#Element"
                   title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element">element</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dd>
-               <a href="#Group"
-                  title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group">group</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
             <dd>
                <a href="#Group"
                   title="http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group">group</a>
@@ -2102,14 +1737,3 @@ Preferably in the form:
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
-</div>
-<div id="acknowledgements">
-<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p>
-The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
-</div>
-
-
-</div>
-</body>
-</html>

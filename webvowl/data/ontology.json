@@ -7,121 +7,127 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "38",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
     "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "57",
-    "type" : "owl:Class"
-  }, {
-    "id" : "58",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "51",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "53",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "54",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "60",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "61",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "62",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "13",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "34",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "42",
     "type" : "owl:Class"
   }, {
     "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
     "type" : "owl:Class"
   }, {
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -134,8 +140,8 @@
     "comment" : {
       "undefined" : "The connotative description of the subject of the statement."
     },
-    "id" : "15",
-    "superClasses" : [ "16" ]
+    "id" : "19",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Interpretation",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -146,7 +152,17 @@
     "comment" : {
       "undefined" : "Any interpretation around any object. For interpretation we intend the understanding and comment by someone on something.\nPreferably in the form:\n\"Title\" by Author"
     },
-    "id" : "5"
+    "id" : "8"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "2", "17", "14", "23", "29", "21" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "28"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "11" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "30"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Subject",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -157,27 +173,27 @@
     "comment" : {
       "undefined" : "The concept which is referred to in the content."
     },
-    "id" : "31"
+    "id" : "33"
   }, {
     "instances" : 0,
-    "union" : [ "33", "34" ],
+    "union" : [ "2", "17", "14", "23", "21" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "32"
+    "id" : "34"
   }, {
     "instances" : 0,
-    "union" : [ "19", "15" ],
+    "union" : [ "36", "37" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "35"
   }, {
     "instances" : 0,
-    "union" : [ "5", "26", "2", "11", "30", "37", "28" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "36"
-  }, {
-    "instances" : 0,
-    "union" : [ "5", "8" ],
+    "union" : [ "39", "40" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "38"
+  }, {
+    "instances" : 0,
+    "union" : [ "5", "19" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "41"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -185,16 +201,16 @@
     "label" : {
       "IRI-based" : "Content"
     },
-    "subClasses" : [ "26", "11" ],
+    "subClasses" : [ "17", "14" ],
     "comment" : {
       "undefined" : "The content of the artwork."
     },
     "id" : "2"
   }, {
     "instances" : 0,
-    "union" : [ "50", "51" ],
+    "union" : [ "17", "2" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "47"
+    "id" : "42"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Debate",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -205,32 +221,32 @@
     "comment" : {
       "undefined" : "Any explicit or inferred discussion between parties, around any object. Whether the debate is explicit or inferred, it has to be specified in the Description."
     },
-    "id" : "8"
+    "id" : "11"
   }, {
     "instances" : 0,
-    "union" : [ "53", "54" ],
+    "union" : [ "17", "14" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "52"
+    "id" : "43"
   }, {
     "instances" : 0,
-    "union" : [ "26", "2", "11", "30", "28" ],
+    "union" : [ "55", "56" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "45"
+    "id" : "54"
   }, {
     "instances" : 0,
-    "union" : [ "26", "2", "11", "30", "28" ],
+    "union" : [ "2", "17", "14", "23", "21" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "56"
+    "id" : "57"
   }, {
     "instances" : 0,
-    "union" : [ "2", "26" ],
+    "union" : [ "17", "14" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "10"
+    "id" : "16"
   }, {
     "instances" : 0,
-    "union" : [ "5", "8" ],
+    "union" : [ "8", "11" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "21"
+    "id" : "25"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Item",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -241,18 +257,18 @@
     "comment" : {
       "undefined" : "Any element of the artwork's content that is inanimated."
     },
-    "id" : "28",
-    "superClasses" : [ "11" ]
+    "id" : "21",
+    "superClasses" : [ "14" ]
   }, {
     "instances" : 0,
-    "union" : [ "26", "2", "11", "30", "28", "37", "31" ],
+    "union" : [ "17", "2", "14", "23", "29", "21", "33" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "22"
+    "id" : "26"
   }, {
     "instances" : 0,
-    "union" : [ "26", "11" ],
+    "union" : [ "58", "59", "60" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "1"
+    "id" : "9"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -264,73 +280,71 @@
       "undefined" : "A human being."
     },
     "attributes" : [ "external" ],
-    "id" : "57"
+    "id" : "61"
   }, {
     "instances" : 0,
-    "union" : [ "5", "2", "26", "11", "8", "42", "59", "30", "37", "28", "31" ],
+    "union" : [ "2", "17" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "58"
+    "id" : "13"
   }, {
     "instances" : 0,
-    "union" : [ "60", "61", "62" ],
+    "union" : [ "8", "2", "17", "11", "14", "47", "63", "23", "21", "29", "33" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "6"
+    "id" : "62"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
+    "id" : "36",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "51",
+    "id" : "37",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "53",
+    "id" : "55",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "54",
+    "id" : "56",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "alternative"
     }
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#common",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "id" : "60",
+    "id" : "59",
     "label" : {
       "IRI-based" : "common"
     }
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#discredited",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "id" : "61",
+    "id" : "60",
     "label" : {
       "IRI-based" : "discredited"
     }
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#alternative",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "id" : "62",
-    "label" : {
-      "IRI-based" : "alternative"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "13",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "instances" : 0,
+    "union" : [ "17", "14" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "1"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -341,7 +355,7 @@
     "comment" : {
       "undefined" : "Any group of elements contained in the content of an artwork."
     },
-    "id" : "26",
+    "id" : "17",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element",
@@ -350,23 +364,23 @@
     "label" : {
       "IRI-based" : "Element"
     },
-    "subClasses" : [ "30", "28" ],
+    "subClasses" : [ "23", "21" ],
     "comment" : {
       "undefined" : "Any single element that is present in the content of an artwork."
     },
-    "id" : "11",
+    "id" : "14",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
+    "id" : "39",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "34",
+    "id" : "40",
     "label" : {
       "IRI-based" : "string"
     }
@@ -380,7 +394,7 @@
     "comment" : {
       "undefined" : "Any physical artwork that can be observed. For instance a painting or a statue."
     },
-    "id" : "42"
+    "id" : "47"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Character",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -391,8 +405,8 @@
     "comment" : {
       "undefined" : "Any element of the artwork's content that is a living being."
     },
-    "id" : "30",
-    "superClasses" : [ "11" ]
+    "id" : "23",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Symbol",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -403,7 +417,7 @@
     "comment" : {
       "undefined" : "The thing that represents or stands for something else."
     },
-    "id" : "37"
+    "id" : "29"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Description",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -411,11 +425,11 @@
     "label" : {
       "IRI-based" : "Description"
     },
-    "subClasses" : [ "19", "15" ],
+    "subClasses" : [ "5", "19" ],
     "comment" : {
       "undefined" : "The description of the subject of the statement."
     },
-    "id" : "16"
+    "id" : "6"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#ObjectiveDescription",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -426,8 +440,8 @@
     "comment" : {
       "undefined" : "A denotative description of the subject of the statement."
     },
-    "id" : "19",
-    "superClasses" : [ "16" ]
+    "id" : "5",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#Origin",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
@@ -438,79 +452,73 @@
     "comment" : {
       "undefined" : "The entity from which the symbol derives its meaning, i.e. the provenance of the symbol's meaning (e.g. the biography of the artist; an historical event; a general concept, etc.)."
     },
-    "id" : "59"
+    "id" : "63"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
     "id" : "4",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "7",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "9",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "3",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "17",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "18",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "20",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "24",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "25",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "27",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "14",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
     "id" : "12",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "40",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "43",
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "44",
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "46",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "23",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
     "id" : "49",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "55",
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "63",
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
     "type" : "owl:objectProperty"
   }, {
     "id" : "64",
@@ -525,14 +533,20 @@
     "id" : "67",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "39",
+    "id" : "68",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "68",
-    "type" : "owl:datatypeProperty"
+    "id" : "44",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "69",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent",
@@ -543,278 +557,273 @@
     },
     "superproperty" : [ "3" ],
     "domain" : "1",
-    "attributes" : [ "transitive", "object" ],
+    "attributes" : [ "object", "transitive" ],
     "id" : "0"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isPerceivedAs",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "6",
+    "range" : "9",
     "label" : {
       "IRI-based" : "isPerceivedAs"
     },
-    "domain" : "5",
+    "domain" : "8",
     "comment" : {
       "undefined" : "The credit given to the subject of the statement."
     },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "4"
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "7"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isInvolvedIn",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "8",
+    "range" : "11",
     "label" : {
       "IRI-based" : "isInvolvedIn"
     },
-    "domain" : "5",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "7"
+    "domain" : "8",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "10"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "11",
+    "range" : "14",
     "label" : {
       "IRI-based" : "containsElement"
     },
-    "superproperty" : [ "12" ],
-    "domain" : "10",
-    "attributes" : [ "transitive", "object" ],
-    "id" : "9"
+    "superproperty" : [ "15" ],
+    "domain" : "13",
+    "attributes" : [ "object", "transitive" ],
+    "id" : "12"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "13",
+    "range" : "17",
     "label" : {
       "IRI-based" : "isContainedIn"
     },
-    "domain" : "13",
-    "subproperty" : [ "0", "14" ],
-    "attributes" : [ "transitive", "object" ],
+    "domain" : "16",
+    "subproperty" : [ "0", "18" ],
+    "attributes" : [ "object", "transitive" ],
     "id" : "3"
   }, {
-    "range" : "16",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "17"
+    "range" : "14",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
   }, {
-    "range" : "16",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "18"
+    "range" : "14",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasObject",
-    "inverse" : "23",
+    "inverse" : "27",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "22",
+    "range" : "26",
     "label" : {
       "IRI-based" : "hasObject"
     },
-    "domain" : "21",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "20"
-  }, {
-    "range" : "2",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "25",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
     "id" : "24"
   }, {
     "range" : "2",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "25"
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
   }, {
-    "range" : "11",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "27"
-  }, {
-    "range" : "11",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInGroup",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "26",
+    "range" : "17",
     "label" : {
       "IRI-based" : "isContainedInGroup"
     },
     "superproperty" : [ "3" ],
-    "domain" : "11",
-    "attributes" : [ "transitive", "object" ],
-    "id" : "14"
+    "domain" : "14",
+    "attributes" : [ "object", "transitive" ],
+    "id" : "18"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains",
     "inverse" : "3",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "13",
+    "range" : "43",
     "label" : {
       "IRI-based" : "contains"
     },
-    "domain" : "13",
-    "subproperty" : [ "9", "39" ],
-    "attributes" : [ "transitive", "object" ],
-    "id" : "12"
+    "domain" : "42",
+    "subproperty" : [ "12", "44" ],
+    "attributes" : [ "object", "transitive" ],
+    "id" : "15"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "31",
+    "range" : "33",
     "label" : {
       "IRI-based" : "subject"
     },
     "domain" : "2",
-    "attributes" : [ "irreflexive", "asymmetric", "external", "object" ],
-    "id" : "40"
+    "attributes" : [ "object", "asymmetric", "irreflexive", "external" ],
+    "id" : "45"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isDepictedBy",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "42",
+    "range" : "47",
     "label" : {
       "IRI-based" : "isDepictedBy"
     },
     "domain" : "2",
-    "attributes" : [ "transitive", "object" ],
-    "id" : "41"
+    "attributes" : [ "object", "transitive" ],
+    "id" : "46"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPrevailingInterpretation",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "5",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasPrevailingInterpretation"
     },
-    "domain" : "8",
-    "attributes" : [ "irreflexive", "asymmetric", "functional", "object" ],
-    "id" : "43"
+    "domain" : "11",
+    "attributes" : [ "object", "functional", "asymmetric", "irreflexive" ],
+    "id" : "48"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#represents",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "37",
+    "range" : "29",
     "label" : {
       "IRI-based" : "represents"
     },
-    "domain" : "45",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "44"
+    "domain" : "34",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "49"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasStartingAssumption",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "47",
+    "range" : "35",
     "label" : {
       "IRI-based" : "hasStartingAssumption"
     },
-    "domain" : "5",
+    "domain" : "8",
     "comment" : {
       "undefined" : "The basis of the subject of the statement; e.g. the starting point of the interpretation."
     },
     "attributes" : [ "datatype" ],
-    "id" : "46"
+    "id" : "50"
   }, {
     "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
     "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
-    "range" : "35",
+    "range" : "41",
     "label" : {
       "IRI-based" : "type"
     },
-    "domain" : "16",
-    "attributes" : [ "irreflexive", "symmetric", "external", "object" ],
-    "id" : "48"
-  }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "isObjectOf"
-    },
-    "domain" : "36",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "23"
+    "domain" : "6",
+    "attributes" : [ "object", "irreflexive", "symmetric", "external" ],
+    "id" : "51"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#depicts",
-    "inverse" : "41",
+    "inverse" : "46",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
     "range" : "2",
     "label" : {
       "IRI-based" : "depicts"
     },
-    "domain" : "42",
-    "attributes" : [ "transitive", "object" ],
-    "id" : "49"
+    "domain" : "47",
+    "attributes" : [ "object", "transitive" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isObjectOf",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "isObjectOf"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "27"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#involves",
-    "inverse" : "7",
+    "inverse" : "10",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "5",
+    "range" : "8",
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "8",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "55"
+    "domain" : "11",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "53"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasDescription",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "16",
+    "range" : "6",
     "label" : {
       "IRI-based" : "hasDescription"
     },
-    "domain" : "58",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "63"
+    "domain" : "62",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "64"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSimilarInterpretation",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "5",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasSimilarInterpretation"
     },
-    "domain" : "5",
-    "attributes" : [ "reflexive", "symmetric", "object" ],
-    "id" : "64"
+    "domain" : "8",
+    "attributes" : [ "reflexive", "object", "symmetric" ],
+    "id" : "65"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#getsMeaningFrom",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "59",
+    "range" : "63",
     "label" : {
       "IRI-based" : "getsMeaningFrom"
     },
-    "domain" : "37",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "65"
+    "domain" : "29",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "66"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasSustainer",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "57",
+    "range" : "61",
     "label" : {
       "IRI-based" : "hasSustainer"
     },
-    "domain" : "5",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "66"
+    "domain" : "8",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "67"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#isRepresentedBy",
-    "inverse" : "44",
+    "inverse" : "49",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "56",
+    "range" : "57",
     "label" : {
       "IRI-based" : "isRepresentedBy"
     },
-    "domain" : "37",
-    "attributes" : [ "irreflexive", "asymmetric", "object" ],
-    "id" : "67"
+    "domain" : "29",
+    "attributes" : [ "object", "asymmetric", "irreflexive" ],
+    "id" : "68"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsGroup",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "26",
+    "range" : "17",
     "label" : {
       "IRI-based" : "containsGroup"
     },
-    "superproperty" : [ "12" ],
+    "superproperty" : [ "15" ],
     "domain" : "2",
-    "attributes" : [ "transitive", "object" ],
-    "id" : "39"
+    "attributes" : [ "object", "transitive" ],
+    "id" : "44"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasTopic",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "52",
+    "range" : "54",
     "label" : {
       "IRI-based" : "hasTopic"
     },
@@ -823,19 +832,24 @@
       "undefined" : "The topic of the subject of the statement."
     },
     "attributes" : [ "datatype" ],
-    "id" : "68"
+    "id" : "69"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO#hasPhysicalSource",
     "baseIri" : "http://www.semanticweb.org/ontologies/2019/11/SIDRO",
-    "range" : "32",
+    "range" : "38",
     "label" : {
       "IRI-based" : "hasPhysicalSource"
     },
-    "domain" : "5",
+    "domain" : "8",
     "comment" : {
       "undefined" : "The physical source that contains the subject of the statement; expressed preferably through a URI or DOI."
     },
     "attributes" : [ "datatype" ],
-    "id" : "69"
+    "id" : "70"
+  }, {
+    "range" : "6",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
   } ]
 }

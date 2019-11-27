@@ -34,6 +34,10 @@
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> .
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Content> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#contains> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
 # 
 # http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#containsElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -130,6 +134,9 @@
 # http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Element> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
+<http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2019/11/SIDRO#Group> .
 # 
 # http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent
 <http://www.semanticweb.org/ontologies/2019/11/SIDRO#isContainedInContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
